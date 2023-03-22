@@ -127,30 +127,36 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    height:550px;
 }
 .eighteen{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height:550px;
 }
 .nineteen{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-.twenty{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    height:550px;
 }
 .twenty-one{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height:550px;
 }
-.twenty-two
+.twenty-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:550px;
+}
+.twenty-three
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height:550px;
 }
