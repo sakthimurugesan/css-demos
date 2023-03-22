@@ -1,0 +1,85 @@
+<div class="container twenty-six">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+
+
+
+    <h2>align-items:center</h2>
+    <div class="container twenty-eight">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+    <h2>align-items:flex-start</h2>
+    <div class="container twenty-nine">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+    <h2>align-items:flex-end</h2>
+    <div class="container thirty">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+    <h2>align-items:stretch</h2>
+    <div class="container thirty-one">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+
+
+    <h2>align-items:center</h2>
+    <div class="container twenty-four">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+    <h2>align-items:flex-start</h2>
+    <div class="container twenty-five">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+    <h2>align-items:flex-end</h2>
+    <div class="container twenty-six">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+    <h2>align-items:stretch</h2>
+    <div class="container twenty-seven">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>

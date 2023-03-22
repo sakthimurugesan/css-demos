@@ -39,6 +39,18 @@ h1{
 {
     background-color: cadetblue;
 }
+.box-7
+{
+    background-color: blue;
+}
+.box-8
+{
+    background-color: chartreuse;
+}
+.box-9
+{
+    background-color: brown;
+}
 .one{
     display: flex;
 }
@@ -159,4 +171,113 @@ h1{
     flex-direction: column;
     justify-content: center;
     height:550px;
+}
+.twenty-four
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:250px;
+}
+.twenty-five
+{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    height:250px;
+}
+.twenty-six
+{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    height:250px;
+}
+.twenty-seven
+{
+    display: flex;
+    flex-direction: row;
+    align-items:stretch;
+    height:250px;
+}
+
+.twenty-eight
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:550px;
+}
+.twenty-nine
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    height:550px;
+}
+.thirty
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    height:550px;
+}
+.thirty-one
+{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    height:550px;
+}
+.thirty-two
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height:550px;
+}
+
+.thirty-three
+{
+    display: flex;
+    flex-wrap: wrap;
+    height:550px;
+    align-content: flex-start;
+}
+
+.thirty-four
+{
+    display: flex;
+    flex-wrap: wrap;
+    height:550px;
+    align-content: flex-end;
+}
+
+.thirty-five
+{
+    display: flex;
+    height:550px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.thirty-six
+{
+    display: flex;
+    height:550px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.thirty-seven
+{
+    display: flex;
+    height:550px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.thirty-eight
+{
+    display: flex;
+    height:550px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
