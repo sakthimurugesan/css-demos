@@ -4,6 +4,10 @@
     background-color: aqua; 
     
 }
+h1{
+    color: red;
+    text-decoration: underline;
+}
 
 .box{
     font-size: 24px;
@@ -35,19 +39,6 @@
 {
     background-color: cadetblue;
 }
-.box-7
-{
-    background-color: coral;
-}
-.box-8
-{
-    background-color: brown;
-
-}
-.box-9
-{
-    background-color: crimson;
-}
 .one{
     display: flex;
 }
@@ -76,19 +67,19 @@
 }
 
 .seven{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .eight{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
 }
 .nine,.ten{
-    height: 300px;
+    height: 250px;
 }
 .nine{
     display: flex;
@@ -99,4 +90,67 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
+}
+
+.eleven{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.tweleve{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.thirteen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.fourteen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fifteen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sixteen
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.seventeen{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.eighteen{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.nineteen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.twenty{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.twenty-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.twenty-two
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
