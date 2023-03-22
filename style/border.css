@@ -1,0 +1,82 @@
+.container
+{
+    background-color: aquamarine;
+    width:200px;
+    height: 200px;
+}
+#one{
+    border-top-width: 15px;
+    border-color: black;
+    border-style:solid;
+    
+
+}
+#two{
+    border-left-width: 15px;
+    border-color: blue;
+    border-style:solid ;
+}
+#three{
+    border-bottom-width: 15px;
+    border-color: green;
+    border-style:solid ;
+}
+#four{
+    border-right-width: 15px;
+    border-color: red;
+    border-style:solid ;
+
+}
+#five{
+    border-top-width: 15px;
+    border-color: black;
+    border-style:solid ;
+
+}
+#six{
+    border-left-width: 15px;
+    border-color: blue;
+    border-style:solid ;
+}
+#seven{
+    border-bottom-width: 15px;
+    border-color: green;
+    border-style:solid ;
+}
+#eight{
+    border-right-width: 15px;
+    border-color: red;
+    border-style:solid ;
+
+}
+
+
+
+
+
+#nine{
+    border-top-width: 15px;
+    border-color: black;
+    border-style:dotted ;
+
+}
+#ten{
+    border-left-width: 15px;
+    border-color: blue;
+    border-style:dashed ;
+}
+#eleven{
+    border-bottom-width: 15px;
+    border-color: green;
+    border-style:double;
+}
+#tweleve{
+    border-right-width: 15px;
+    border-color: red;
+    border-style:ridge ;
+
+}
+#thirteen
+{
+    border: 15px solid green;
+}

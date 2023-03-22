@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list property</title>
+</head>
+<style>
+    .l1 li{
+list-style-type: armenian;
+    }
+    .l2 li{
+        list-style-type: square;
+        list-style-position: inside;
+    }
+    .l3 li{
+        list-style-type: square;
+        list-style-position: outside;
+    }
+    .l4 li{list-style-type: none;
+margin-top: 20px;}
+    .l4 li::before{
+        content: '';
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+        background-image: url('./image/audi.jpg');
+        background-size: cover;
+    }
+</style>
+<body>
+    <h1>view with css</h1>
+    <h1>list-style-type:armenian,circle,square,disc,lower-greek,lower-roman,lower-alpha,lower-latin,upper-greek,upper-roman,upper-alpha,upper-latin</h1>
+    <h1>list-style-position:insdie,outside</h1>
+    <ul class="l1">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ullam.</li>
+    </ul>
+    <h1>list-style-position:insdie</h1>
+    <ul class="l2">
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga. consectetur adipisicing elit. Eveniet, ullam.</li>
+    </ul>
+    <h1>list-style-position:outsdie</h1>
+    <ul class="l3">
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga.consectetur adipisicing elit. Eveniet, ullam.</li>
+        <li>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis vel porro error illo totam nisi aliquam repellat odio, voluptatum reiciendis aperiam ullam odit debitis rem earum tempora dolor expedita fuga. consectetur adipisicing elit. Eveniet, ullam.</li>
+    </ul>
+    <h1>list-style-image</h1>
+    <ol class="l4">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam tenetur iure culpa nesciunt est?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam tenetur iure culpa nesciunt est?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam tenetur iure culpa nesciunt est?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam tenetur iure culpa nesciunt est?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam tenetur iure culpa nesciunt est?</li>
+    </ol>
+</body>
+</html>

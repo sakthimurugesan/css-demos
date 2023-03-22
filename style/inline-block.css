@@ -1,0 +1,13 @@
+.l1 li,.l3 li{
+    display: inline;
+    margin-left: 50px;
+    background-color: red;
+}
+.l2 li{
+    display: block;
+    background-color: red;
+}
+#l4{
+    display: block;
+    background-color: blue;
+}

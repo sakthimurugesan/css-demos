@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+
+    <link rel="stylesheet" href="./style/selectors.css">
+</head>
+
+<body>
+    <h1>descendent selectors</h1>
+    <h3>children selector select the child elements of the given parent elements</h3>
+    <h3>we use this in list styling</h3>
+    <h3>ul li{style}</h3>
+    <h2>list-1</h2>
+    <ul class="list-1">
+        <li>home</li>
+        <li>products</li>
+        <li>history</li>
+        <li>about us</li>
+        <li>contact us</li>
+    </ul>
+    <h1>class selectors</h1>
+    <h2>class selectors are used to select when we style more than one elements</h2>
+    <h1>id selectors</h1>
+    <h2>id selectors are used to select when only one elements</h2>
+    <h1>direct child elements</h1>
+    <h2>list-1</h2>
+    <ul class="list-1">
+        <li>home</li>
+        <li>
+            <ul>
+                <li>home</li>
+                <li>products</li>
+                <li>history</li>
+                <li>about us</li>
+                <li>contact us</li>
+            </ul>
+        </li>
+        <li>history</li>
+        <li>about us</li>
+        <li>contact us</li>
+    </ul>
+    <h2>in the above result we can see a nested list</h2>
+    <h2>but if we want to apply styling only to outer list not for inner list we can use direct child selector</h2>
+    <h1>.list-2 > li {style}</h1>
+    <h2>list-2</h2>
+    <ul class="list-2">
+        <li>home</li>
+        <li>
+            <ul class="">
+                <li>home</li>
+                <li>products</li>
+                <li>history</li>
+                <li>about us</li>
+                <li>contact us</li>
+            </ul>
+        </li>
+        <li>history</li>
+        <li>about us</li>
+        <li>contact us</li>
+    </ul>
+    <h1>adjacent selector is used when apply style for the next element after a particular</h1>
+    <h3>this will not select the children or inner children</h3>
+    <h2>list-2</h2>
+    <ul class="list-2">
+        <li>home</li>
+        <li>
+            <ul class="">
+                <li>home</li>
+                <li>products</li>
+                <li>history</li>
+                <li>about us</li>
+                <li>contact us</li>
+            </ul>
+        </li>
+        <li>history</li>
+        <li>about us</li>
+        <li>contact us</li>
+    </ul>
+    <h2>list-1</h2>
+    <ul class="list-1">
+        <li>home</li>
+        <li>products</li>
+        <li>history</li>
+        <li>about us</li>
+        <li>contact us</li>
+    </ul>
+    <h2>in the above result we can see that upper-alpha style is applied to the adjacent list of list-2</h2>
+    <h1>attribute selector</h1>
+    <h2>attribute selector is used when we define same element containing different attribute or value</h2>
+    <h2>example input elements type as attribute</h2>
+    <h2>type attribute contains different values like email,number,text,submit etc</h2>
+    <h1>element[attribute]{style}</h1>
+    <h2>input[type="text"]{background-color:red;}</h2>
+    <input type="text" name="" id="">
+    <br>
+    <h2>input[type="number"]{background-color:blue;}</h2>
+    <input type="number" name="" id="">
+    <br>
+    <h2>input[type="email"]{background-color:green;}</h2>
+    <input type="email" name="" id="">
+    <br>
+    <h1>pseudo selectors</h1>
+    <h2>pseudo selectors are :hover,:active,:visted,:link</h2>
+    <h2>visited means link that we visited</h2>
+    <h2>link means link that we un-visited</h2>
+    <h2>hover means when we hover a link some style should apply</h2>
+    <h2>active means when we click a link some style should apply</h2>
+    <h2>list-3</h2>
+    <ul class="list-3">
+        <li><a href="1">text comes here</a></li>
+        <li><a href="1">text comes here</a></li>
+        <li><a href="2">text comes here</a></li>
+        <li><a href="3">text comes here</a></li>
+    </ul>
+    <h1>descendent selectors</h1>
+    <h1>old man</h1>
+    <h2>old man is selecting all his heirs to change blue color</h2>
+    <h1>.list-4 li{style}</h1>
+    <h2>list-4</h2>
+    <ul class="list-4">
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+
+    </ul>
+    <h1>direct child</h1>
+    <h1>old man</h1>
+    <h2>old is selecting only sons to change blue color not grand-son</h2>
+    <h2>.list-5 > li{style}</h2>
+    <h2>list-5</h2>
+    <ul class="list-5">
+        <li>
+            son
+
+        </li>
+        <ul>
+            <li>grand-son</li>
+        </ul>
+        <li>
+            son
+
+        </li>
+        <ul>
+            <li>grand-son</li>
+        </ul>
+        <li>
+            son
+
+        </li>
+        <ul>
+            <li>grand-son</li>
+        </ul>
+
+    </ul>
+
+
+
+
+
+    <h1>general sibiling selector</h1>
+    <h1>old man</h1>
+    <h2>old man is selecting his brother sons to change blue color</h2>
+    <h2>.list-6 ~ .list-7 li{style}</h2>
+    <h2>list-6</h2>
+    <ul class="list-6">
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <h2>list-7</h2>
+    <ul class="list-7">
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+
+    </ul>
+
+
+
+    <h1>adjacent sibiling selector</h1>
+    <h1>old man</h1>
+    <h2>old man is selecting his brother first sons to change blue color</h2>
+    <h2>.list-8 + ul li:first-child{
+        color: blue;
+        }</h2>
+    <h2>list-8</h2>
+    <ul class="list-8">
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+        <li>
+            son
+            <ul>
+                <li>grand-son</li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <ul class="list-9">
+        <li>
+            son
+
+        </li>
+        <li>
+            son
+
+        </li>
+        <li>
+            son
+
+        </li>
+        <li>
+            son
+
+        </li>
+
+    </ul>
+
+    <h1>first-child|last-child|nth-child|nth-last-child</h1>
+
+    <h2>list-10</h2>
+    <h2>.list-10 li:first-child{style}</h2>
+    <ul class="list-10">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>list-11</h2>
+    <h2>.list-11 li:last-child{style}</h2>
+    <ul class="list-11">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>
+        if we pass 2n as parameter in nth-child and nth-last-child it will take even elements
+    </h2>
+    <h2>
+        if we pass 2n+1 as parameter in nth-child and nth-last-child it will take odd elements
+    </h2>
+    <h2>list-12</h2>
+    <h2>
+        .list-12 li:nth-child(4){color: blue;}</h2>
+    <ul class="list-12">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>list-13</h2>
+    <h2>.list-13 li:nth-last-child(6){style}</h2>
+    <ul class="list-13">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>list-14</h2>
+    <h2>.list-14 li:nth-child(odd){style}</h2>
+    <ul class="list-14">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>list-15</h2>
+    <h2>.list-15 li:nth-last-child(odd){style}</h2>
+    <ul class="list-15">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>list-16</h2>
+    <h2>.list-16 li:nth-child(even){style}</h2>
+    <ul class="list-16">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>list-17</h2>
+    <h2>.list-17 li:nth-last-child(even){style}</h2>
+    <ul class="list-17">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+    <h2>list-18</h2>
+    <h2>.list-18 li:nth-child(3n-1){style}</h2>
+    <ul class="list-18">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+        <li>list-6</li>
+        <li>list-7</li>
+        <li>list-8</li>
+        <li>list-9</li>
+        <li>list-10</li>
+    </ul>
+
+    <h1>nth-of-type and nth-last-of-type</h1>
+    <h2>nth-of-type and nth-last-of-typedoesn't reqiure a parent</h2>
+    <h2>in this entire window there is no para tag mentioned so far</h2>
+    <h2>p:nth-of-type(2){color:red}</h2>
+    <h2>p:nth-of-type(5){color:green}</h2>
+    <h2>p:nth-last-of-type(2){color:blue}</h2>
+    <h2>p:nth-last-of-type(5){color:brown}</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem fuga nulla nemo tenetur beatae temporibus
+        itaque deserunt debitis harum expedita sit dicta repellat corporis ratione, eum facilis veniam vel!</p>
+    <h1>only-child</h1>
+    <h2>only-child is used when a parent has only one child</h2>
+    <h2>list-19</h2>
+    <h2>.list-19 li:only-child{
+        color:  rgb(7, 49, 237);
+    }</h2>
+    <ul class="list-19">
+        <li>list-1</li>
+    </ul>
+    <h1>only-of-type</h1>
+    <h2>only-of-type is used when in a entire documetnt contains one element only one time</h2>
+    <h2>in this document i have so far not italic now i am going to use</h2>
+    <h2>i:only-of-type{
+        color: darkblue;
+    }</h2>
+    <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, nemo nobis sint earum cumque voluptatem, tempora accusamus quo modi consequatur facilis? Ullam, id fugiat? Nihil corrupti facilis dolorum inventore suscipit!</i>
+<h1>first-of-type and last-of-type is used to select elements both containing parents and without parents</h1>
+<h2>nth-of-type and first-of-type doesn't reqiure a parent</h2>
+
+<div class="para-div">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fuga dolor eum iure quis? Recusandae blanditiis, culpa officiis vel repellat, architecto suscipit consectetur quae id quia dolorem aut amet. Dolore!</p>
+</div>
+
+<h1>:root</h1>
+<h2>root is used as container to store variable is css</h2>
+<h2>:root{--variable:value}</h2>
+<h2>to variable we have to use </h2>
+<h2>color:var(--variable)</h2>
+<h1>:empty</h1>
+<h2>:empty is used to style a element which is empty even a single space character will also be denied</h2>
+<h2>p:empty{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+}</h2>
+<p></p>
+<h1>:not</h1>
+<h2>:not is used when group elements have same class except few to style those few elements we can use :not</h2>
+<h2>.list-20 li:not(.list-20-1)
+    {
+        color: red;
+    }</h2>
+    <h2>list-20</h2>
+<ul class="list-20">
+<li class="list-20-1">list-1</li>
+<li class="list-20-1">list-2</li>
+<li class="list-20-1">list-3</li>
+<li>list-3-1</li>
+<li class="list-20-1">list-4</li>
+<li class="list-20-1">list-5</li>
+</ul>
+<h1>:lang</h1>
+<h2>if we pass lang attribute in div heading para we style by language</h2>
+
+
+</body>
+
+</html>

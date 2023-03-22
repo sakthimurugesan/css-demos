@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form selectors</title>
+    <link rel="stylesheet" href="./style/form-selectors.css">
+</head>
+
+<body>
+    <h1>:target</h1>
+    <h2>:target is used when we have mentioned a link of same part of page in anchor tag and if it is clicked then we
+        want to change style of that part we can use target</h2>
+    <a href="#para-1">para-1</a> <br>
+    <a href="#para-2">para-2</a> <br>
+    <a href="#para-3">para-3</a> <br>
+
+    <p id="para-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis esse quia earum doloremque at eaque
+        est a unde suscipit mollitia, dolore ipsam saepe asperiores voluptatem voluptatum aliquid aspernatur itaque
+        quaerat?</p>
+    <p id="para-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis esse quia earum doloremque at eaque
+        est a unde suscipit mollitia, dolore ipsam saepe asperiores voluptatem voluptatum aliquid aspernatur itaque
+        quaerat?</p>
+    <p id="para-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis esse quia earum doloremque at eaque
+        est a unde suscipit mollitia, dolore ipsam saepe asperiores voluptatem voluptatum aliquid aspernatur itaque
+        quaerat?</p>
+
+    <h1>:focus</h1>
+    <h2>h2 is used in input box in html when click on the input then we want to change the style we can use the focus
+    </h2>
+    <h2>
+        #text-1:focus{
+        background-color: red;
+        width: 200px;
+        height: 50px;
+        color:white
+        }</h2>
+    <input type="text" name="" id="text-1">
+
+    <h1>:checked</h1>
+    <h2>checked is used when we click on the checkbox of the input</h2>
+    <h2>input[name=""]:checked if we use this method only a particular group of elements have same style</h2>
+    <h2>input[type=""]:checked if we this method so the entire checkbox will have same style</h2>
+    <h2>input[name="songs"]:checked +label
+        {
+        color:red
+        }</h2>
+    <input type="checkbox" name="songs" id="song-1"> <label for="song-1">song</label>
+    <input type="checkbox" name="songs" id="song-2"> <label for="song-2">song</label>
+    <input type="checkbox" name="songs" id="song-3"> <label for="song-3">song</label>
+    <input type="radio" name="songs-2" id="song-4"> <label for="song-4">song</label>
+    <input type="radio" name="songs-2" id="song-5"> <label for="song-5">song</label>
+    <input type="radio" name="songs-2" id="song-6"> <label for="song-6">song</label>
+    <h1>readonly reqired enabled disabled read-write</h1>
+    <textarea name="" id="" cols="50" rows="30">
+        input[type="text"]:read-only
+        {
+            background-color: greenyellow;
+        }
+        input[type="email"]:read-write
+        {
+            background-color: yellow;
+        }
+        input[type="number"]:required
+        {
+            background-color: red;
+        }
+        input[type="email"]:enabled
+        {
+            background-color: orangered;
+        }
+        input[type="email"]:disabled
+        {
+            background-color: gray;
+        }</textarea><br>
+    <input type="number" required><br>
+    <input type="text" readonly><br>
+    <input type="email" read-write><br>
+    <input enabled type="email"><br>
+    <input disabled type="email">
+    <h1>:valid | :invalid</h1>
+    <textarea name="" id="" cols="30" rows="10">
+        #valid-check:invalid{
+            outline: 5px solid red;
+        }
+        #valid-check:valid{
+            border: 5px solid green;
+        }
+        
+    </textarea>
+    <input type="text" name="" pattern="[a-z]*" id="valid-check">
+    <h1>:default</h1>
+    <h2>input[type="radio"]:default + label
+        {
+            border: 5px solid red;
+        }</h2>
+    <input type="radio" name="songs-3" id="song-4-1" checked> <label for="song-4-1">song</label>
+    <input type="radio" name="songs-3" id="song-5-1"> <label for="song-5-1">song</label>
+    <input type="radio" name="songs-3" id="song-6-1"> <label for="song-6-1">song</label>
+    <h1>:is()</h1>
+    <h2>is() is used to select particular elements under same class or id</h2>
+    <h2>class :is(elements)</h2>
+    <h2>we can also select same element two different class or id</h2>
+    <h2>:is(class-1,class-2) element</h2>
+    <h2>if we want to select a group of element from different class</h2>
+    <h2>:is(.class-1,class-2) :is(e1,e2,e3)
+        {
+            style
+        }</h2>
+    <h2>.div-1 :is(h1,h3,p)
+        {
+            color: darkgreen;
+        }
+        </h2>
+    <div class="div-1">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis eos nobis minima esse nulla provident libero dolores enim fugit inventore dolore natus, magnam quia eaque minus cum aut quidem?</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quae id a molestias dolorum quia ea, ad eum. Sequi minima esse distinctio inventore laborum iusto sint dolorum doloremque unde quia?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur labore amet reprehenderit! Cum saepe cumque mollitia inventore incidunt repellat, optio, dolor at perferendis, non nobis ut quisquam? Quis, ipsum!</p>
+    </div>
+    <h2>:is(.div-2,.div-3) :is(h1,h3,p)
+        {
+            color: deeppink;
+        }</h2>
+    <div class="div-2">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis eos nobis minima esse nulla provident libero dolores enim fugit inventore dolore natus, magnam quia eaque minus cum aut quidem?</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quae id a molestias dolorum quia ea, ad eum. Sequi minima esse distinctio inventore laborum iusto sint dolorum doloremque unde quia?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur labore amet reprehenderit! Cum saepe cumque mollitia inventore incidunt repellat, optio, dolor at perferendis, non nobis ut quisquam? Quis, ipsum!</p>
+    </div>
+    <div class="div-2">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, veritatis eos nobis minima esse nulla provident libero dolores enim fugit inventore dolore natus, magnam quia eaque minus cum aut quidem?</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quae id a molestias dolorum quia ea, ad eum. Sequi minima esse distinctio inventore laborum iusto sint dolorum doloremque unde quia?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur labore amet reprehenderit! Cum saepe cumque mollitia inventore incidunt repellat, optio, dolor at perferendis, non nobis ut quisquam? Quis, ipsum!</p>
+    </div>
+
+</body>
+
+</html>

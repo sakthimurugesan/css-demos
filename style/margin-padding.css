@@ -1,0 +1,43 @@
+.container{
+    width:200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    overflow: hidden;
+}
+#one{
+    margin-top: 40px;
+}
+#two{
+    margin-left: 40px;
+}
+#three{
+    margin-bottom: 40px;
+}
+#four{
+    margin-right: 40px;
+}
+#five{
+    margin: 40px 40px 40px 40px;
+}
+#six{
+    margin: 40px 40px;
+}
+#seven{
+    padding-top: 40px;
+}
+#eight{
+    padding-left: 40px;
+}
+#nine{
+    padding-bottom: 40px;
+}
+#ten{
+    padding-right: 40px;
+}
+#eleven{
+    padding:40px 40px 40px 40px;
+}
+#tweleve{
+    padding:40px 40px;
+}

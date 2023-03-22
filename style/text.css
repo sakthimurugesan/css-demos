@@ -1,0 +1,64 @@
+.one{
+    letter-spacing: normal;
+}
+.two{
+    letter-spacing: 5pt;
+}
+.three{
+    text-decoration: underline;
+}
+.four{
+    text-decoration: overline;
+}
+.five{
+    text-decoration: line-through;
+}
+.six{
+    text-transform: capitalize;
+}
+.seven{
+    text-transform: lowercase;
+}
+.eight{
+    text-transform: uppercase;
+}
+
+.nine,.eleven{
+    width:800px;
+    padding: 50px;
+    border: 2px solid black;
+    height: fit-content;
+}
+.p-1{
+    text-align: center;
+}
+.p-2{
+    text-align: left;
+}
+.p-3{
+    text-align: right;
+}
+.p-4{
+    text-align: justify;
+}
+.q-1{
+    line-height: 3;
+}
+.q-2{
+    line-height: 50px;
+}
+.q-3
+{
+    line-height: 300%;
+    /*
+    100% means one line
+    300% means 3 lines
+    % is used instead of decimals
+    */
+}
+#sub-1{
+    vertical-align: sub;
+}
+#sup-1{
+    vertical-align: super;
+}

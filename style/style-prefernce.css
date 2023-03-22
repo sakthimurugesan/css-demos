@@ -1,0 +1,16 @@
+
+p{
+    color: blue;
+}
+
+
+
+#one p
+{
+color: red; /*try add important*/
+}
+
+.one{
+    color: green !important;/*try remove important*/
+}
+

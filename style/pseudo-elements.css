@@ -1,0 +1,21 @@
+*::selection{
+    color: white;
+    background-color: cadetblue;
+}
+p::first-letter{
+    color: red;
+}
+p::first-line{
+    color: blue;
+}
+p::after{
+    content: '';
+    height: 50px;
+    width: 100%;
+    display: block;
+    background-color: red;
+}
+
+input::placeholder{
+    color: darkgreen;
+}

@@ -1,0 +1,141 @@
+:root{
+    --color1:red;
+}
+.list-1 li {
+    list-style-type: decimal-leading-zero;
+}
+
+.list-2>li {
+    list-style-type: georgian;
+}
+
+.list-2+.list-1 li {
+    list-style-type: upper-alpha;
+}
+
+input[type="text"] {
+    background-color: red;
+    color: white;
+}
+
+input[type="email"] {
+    background-color: green;
+    color: white;
+}
+
+input[type="number"] {
+    background-color: blue;
+    color: white;
+}
+
+h1 {
+    color: red;
+    text-decoration: underline;
+}
+
+.list-3 li {
+    display: inline;
+    padding-left: 40px;
+}
+
+a {
+    font-size: 18px;
+}
+
+
+a:link {
+    color: teal;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: black;
+}
+
+.list-4 li {
+    color: blue;
+    font-weight: bolder;
+}
+
+.list-5>li {
+    color: blue;
+}
+
+.list-6~.list-7 li {
+    color: blue;
+}
+
+.list-8+ul li:first-child {
+    color: blue;
+}
+
+.list-10 li:first-child {
+    color: blue;
+}
+
+.list-11 li:last-child {
+    color: blue;
+}
+
+.list-12 li:nth-child(4) {
+    color: blue;
+}
+
+.list-13 li:nth-last-child(6) {
+    color: blue;
+}
+
+.list-14 li:nth-child(odd) {
+    color: blue;
+}
+
+
+.list-15 li:nth-last-child(odd) {
+    color: blue;
+}
+
+
+.list-16 li:nth-child(even) {
+    color: blue;
+}
+
+.list-17 li:nth-last-child(even) {
+    color: blue;
+}
+.list-18 li:nth-child(3n-1){color: blue;}
+
+p:nth-of-type(2){color:red}
+p:nth-of-type(5){color:green}
+p:nth-last-of-type(2){color:blue}
+p:nth-last-of-type(5){color:brown}
+.list-19 li:only-child{
+    color: rgb(7, 49, 237);
+}
+i:only-of-type{
+    color: darkblue;
+}
+p:first-of-type
+{
+    text-transform: uppercase !important;
+}
+p:last-of-type
+{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+p:empty{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+}
+.list-20 li:not(.list-20-1)
+{
+    color: red;
+}
