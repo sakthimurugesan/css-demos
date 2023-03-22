@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="./style/flexbox.css">
+</head>
+<body>
+    <h1>css flex container properties</h1>
+    <ol>
+        <li>display</li>
+        <li>flex-direction</li>
+        <li>flex-wrap</li>
+        <li>flex-flow</li>
+        <li>column-gp</li>
+        <li>row-gap</li>
+        <li>gap</li>
+        <li>justify-content</li>
+        <li>align-items</li>
+        <li>align-content</li>
+    </ol>
+    <h1>flex box item properties</h1>
+    <ol>
+        <li>order</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex</li>
+        <li>align-self</li>
+    </ol>
+    <h1>display:flex</h1>
+    <h2>container - one</h2>
+    <div class="container one">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>display:inline-flex</h1>
+    <h2>container - two</h2>
+    <div class="container two">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-direction:row</h1>
+    <h2>container - three</h2>
+    <div class="container three">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-direction:row-reverse</h1>
+    <h2>container - four</h2>
+    <div class="container four">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-direction:column</h1>
+    <h2>container - five</h2>
+    <div class="container five">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-direction:column-reverse</h1>
+    <h2>container - six</h2>
+    <div class="container six">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-wrap:row|row-reverse|column|column-reverse</h1>
+    <h1>flex-wrap:wrap</h1>
+    <h2>flex-direction:row</h2>
+    <h2>container - seven</h2>
+    <div class="container seven">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-wrap:wrap-reverse</h1>
+    <h2>flex-direction:row</h2>
+    <h2>container - eight</h2>
+    <div class="container eight">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-wrap:wrap</h1>
+    <h2>flex-direction:column</h2>
+    <h2>container - nine</h2>
+    <div class="container nine">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    <h1>flex-wrap:wrap-reverse</h1>
+    <h2>flex-direction:column-reverse</h2>
+    <div class="container ten">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+</body>
+</html>
