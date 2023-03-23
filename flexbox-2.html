@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-2</title>
+    <link rel="stylesheet" href="./style/flexbox-2.css">
+</head>
+<body>
+    <h1>order:number</h1>
+    <h2>order is used to order of the box in html</h2>
+    <h2>default order value is zero</h2>
+    <h2>if order of one box is needed to changed then we have to change all</h2>
+    <textarea name="" readonly id="" cols="30" rows="10">
+:is(.one) :is(.box-2)
+{order:4;}
+:is(.one) :is(.box-3)
+{order:1;}
+:is(.one) :is(.box-1)
+{order:4;}
+:is(.one) :is(.box-4)
+{order:2;}</textarea>
+    <div class="container one">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        
+    </div>
+    <h1>flex-grow:size</h1>
+    <h2>flex-grow occupies the remaining space in the row and gives other elements equal space</h2>
+    <div class="container two">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+    <div class="container three">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+    </div>
+</body>
+</html>
