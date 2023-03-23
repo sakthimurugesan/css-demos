@@ -76,3 +76,13 @@ h1{
 {
     flex-grow: 1;
 }
+.four
+{
+    display: flex;
+}
+.four .box{
+    width: 100px;
+}
+.four .box-4{
+    flex-shrink: 5;
+}
