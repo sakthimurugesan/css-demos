@@ -33,6 +33,64 @@
         <div class="box box-9">box-9</div>
     </div>
     <h1>by default grid will be displayed as row</h1>
-    <h2>we can it by grid-auto-column ans grid-auto-row</h2>
+    <h2>grid-auto-flow is used to change col from row or row from col</h2>
+    <h2>we can it by grid-auto-column and grid-auto-row to change height and width of the boxes</h2>
+    <textarea readonly name="" id="" cols="30" rows="10">
+    .three{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 166px;
+    }    
+    </textarea>
+    <div class="container three">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
+    
+    <textarea readonly name="" id="" cols="30" rows="10">
+.three{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 166px;
+}    
+        </textarea>
+        <div class="container four">
+            <div class="box box-1">box-1</div>
+            <div class="box box-2">box-2</div>
+            <div class="box box-3">box-3</div>
+            <div class="box box-4">box-4</div>
+            <div class="box box-5">box-5</div>
+            <div class="box box-6">box-6</div>
+            <div class="box box-7">box-7</div>
+            <div class="box box-8">box-8</div>
+            <div class="box box-9">box-9</div>
+        </div>
+    <h1>grid-column-start | grid-column-end</h1>
+    <h1>grid-row-start | grid-row-end</h1>
+    <h2>if we want to expand a particular col or row we can use grid-column-start , grid-row-start</h2>
+    <h2>grid-column-start,grid-row-start takes the starting box number</h2>
+    <h2>grid-column-end,grid-row-end takes the end box number as n+1</h2>
+    <h2>grid-column-end,grid-row-end:span n</h2>
+    <h2>grid-column-end,grid-row-end:start / span n</h2>
+    <h2>we can also change the order of boxes in grid</h2>
+    <textarea name="" readonly id="" cols="30" rows="10"></textarea>
+    <div class="container five">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+        <div class="box box-4">box-4</div>
+        <div class="box box-5">box-5</div>
+        <div class="box box-6">box-6</div>
+        <div class="box box-7">box-7</div>
+        <div class="box box-8">box-8</div>
+        <div class="box box-9">box-9</div>
+    </div>
 </body>
 </html>

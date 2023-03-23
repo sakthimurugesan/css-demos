@@ -79,3 +79,24 @@ h1 {
     width: 100px;
 }
 
+.three{
+    display: grid;
+    grid-auto-flow: column;
+    
+}
+.four{
+    display: grid;
+    grid-auto-rows: 100px;
+}
+.five{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: 200px 200px 200px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.five .box-9
+{
+    order: 5;
+}
