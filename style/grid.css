@@ -1,84 +1,131 @@
-.container
-{
+.container {
     border: 5px solid black;
     background-color: aqua;
     color: white;
-    
+
 }
-h1{
+
+h1 {
     color: rgb(255, 0, 0);
     text-decoration: underline;
 }
 
-.box{
+.box {
     font-size: 24px;
     color: black;
     padding: 16px;
     text-align: center;
 }
-.box-1
-{
+
+.box-1 {
     background-color: blue;
 }
-.box-2
-{
+
+.box-2 {
     background-color: chartreuse;
 }
-.box-3
-{
+
+.box-3 {
     background-color: brown;
 }
-.box-4
-{
+
+.box-4 {
     background-color: crimson;
 }
-.box-5
-{
+
+.box-5 {
     background-color: rgb(243, 144, 24);
 }
-.box-6
-{
+
+.box-6 {
     background-color: cadetblue;
 }
-.box-7
-{
+
+.box-7 {
     background-color: blue;
 }
-.box-8
-{
+
+.box-8 {
     background-color: chartreuse;
 }
-.box-9
-{
+
+.box-9 {
     background-color: brown;
 }
-.one
-{
+
+.one {
     display: grid;
     grid-template-columns: 100px 200px 300px;
 }
-.two
-{
+
+.two {
     display: grid;
-    grid-template-columns: repeat(2,200px) 300px;
+    grid-template-columns: repeat(2, 200px) 300px;
 }
-.three
-{
+
+.three {
     display: grid;
     grid-template-columns: 4fr 2fr 1fr;
 }
 
 
-.four{
+.four {
     display: grid;
-    grid-template-columns: repeat(2,2fr) minmax(200px,4fr);
+    grid-template-columns: repeat(2, 2fr) minmax(200px, 4fr);
 }
 
-.five{
+.five {
     box-sizing: border-box;
     display: grid;
     height: 600px;
-    grid-template: repeat(3,1fr)/repeat(4,1fr);
-    gap:20px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    gap: 20px;
+}
+
+.six {
+    display: grid;
+    height: 600px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    justify-items: start;
+
+}
+
+.seven {
+    display: grid;
+    height: 600px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    justify-items: end;
+
+}
+
+.eight {
+    display: grid;
+    height: 600px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    justify-items: center;
+
+}
+
+.nine {
+    display: grid;
+    height: 600px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    align-items: start;
+
+}
+
+.ten {
+    display: grid;
+    height: 600px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    align-items: end;
+
+}
+
+.eleven {
+    display: grid;
+    height: 600px;
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+    align-items: center;
 
 }
