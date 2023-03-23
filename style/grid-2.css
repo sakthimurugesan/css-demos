@@ -1,0 +1,81 @@
+.container {
+    border: 5px solid black;
+    background-color: aqua;
+    color: white;
+
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+.box {
+    font-size: 24px;
+    color: black;
+    padding: 16px;
+    text-align: center;
+}
+
+.box-1 {
+    background-color: blue;
+}
+
+.box-2 {
+    background-color: chartreuse;
+}
+
+.box-3 {
+    background-color: brown;
+}
+
+.box-4 {
+    background-color: crimson;
+}
+
+.box-5 {
+    background-color: rgb(243, 144, 24);
+}
+
+.box-6 {
+    background-color: cadetblue;
+}
+
+.box-7 {
+    background-color: blue;
+}
+
+.box-8 {
+    background-color: chartreuse;
+}
+
+.box-9 {
+    background-color: brown;
+}
+.one
+{
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(3,250px);
+    justify-content: center;
+
+}
+
+.two
+{
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(3,250px);
+    justify-items: center;
+    align-items: center;
+
+}
+.two .box{
+    height: 100px;
+    width: 100px;
+}
+
