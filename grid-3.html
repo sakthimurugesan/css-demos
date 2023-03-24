@@ -7,50 +7,97 @@
     <title>grid-3</title>
 </head>
 <style>
-.container
-{
-    display: grid;
-    width: 600px;
-    height: 800px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr repeat(2,3fr) 4fr 1fr;
-    background-color: chartreuse;
-    gap:20px;
-    padding: 20px;
-}
-header,article,section,footer,main{
-    border: 2px solid black;
-}
-header{
-    grid-column-end:span 3;
-}
-article{
-    grid-row-start: span 2;
-}
-
-section#sec2{
-grid-column-start: 2;
-height: 100%;
-align-self: center;
-justify-content: center;
-
-}
-main{
-    grid-column-end:span 3;
-}
-footer{
-    grid-column-end:span 3;
-}
+   
+    .one{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px repeat(4,1fr) 50px;
+        height: 800px;
+        width: 600px;
+    }
+    .one nav{
+        grid-column-end: span 3;
+        border: 2px solid black;
+    }
+    .one header{
+        grid-column-end: span 3;
+        border: 2px solid black;
+    }
+    .one section
+    {
+        grid-row-end: span 2;
+        border: 2px solid black;
+    }
+    .one main
+    {
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+        border: 2px solid black;
+    }
+    .one footer{
+        grid-column-end: span 3;
+        border: 2px solid black;
+    }
+    .one aside{
+        border: 2px solid black;
+    }
+    .two
+    {
+        width: 600x;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .two nav,.two footer{
+        height: 50px;
+        border: 2px solid black;
+    }
+    .two header{
+        height: 175px;
+        border: 2px solid black;
+    }
+    .three section{
+        height: 350px;
+        width: 200px;
+        border: 2px solid black;
+    }
+    .two aside
+    {
+        width: 200px;
+        height: 175px;
+        border: 2px solid black;
+    }
+    .three,.four{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid black;
+    }
 </style>
 <body>
-    <div class="container">
+    <h1>USING GRID</h1>
+    <div class="container one">
+        <nav>NAVBAR</nav>
         <header>HEADER</header>
-        <article>ARTICLE</article>
-        <section id="sec1">TEXT-1</section>
-        <section id="sec2">TEXT-2</section>
-        <main>MAIN</main>
+        <section>SIDEBAR</section>
+        <main>MAIN-CONTENT</main>
+        <aside id="asise-1">ASIDE-1</aside>
+        <aside id="asise-2">ASIDE-2</aside>
+        <aside id="asise-3">ASIDE-3</aside>
         <footer>FOOTER</footer>
-
+    </div>
+    <h1>USING FLEX-BOX</h1>
+    <div class="container two">
+        <nav>NAVBAR</nav>
+        <header>HEADER</header>
+        <div class="three">
+            <section>SIDEBAR</section>
+            <main>MAIN-CONTENT</main>
+        </div>
+        <div class="four">
+            <aside id="aside-1">ASIDE-1</aside>
+        <aside id="aside-2">ASIDE-2</aside>
+        <aside id="aside-3">ASIDE-3</aside>
+        </div>
+        <footer>FOOTER</footer>
     </div>
 </body>
 </html>
