@@ -4,100 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid-3</title>
+    <title>navbar</title>
+    <link rel="stylesheet" href="./style/grid-3.css">
 </head>
-<style>
-   
-    .one{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 50px repeat(4,1fr) 50px;
-        height: 800px;
-        width: 600px;
-    }
-    .one nav{
-        grid-column-end: span 3;
-        border: 2px solid black;
-    }
-    .one header{
-        grid-column-end: span 3;
-        border: 2px solid black;
-    }
-    .one section
-    {
-        grid-row-end: span 2;
-        border: 2px solid black;
-    }
-    .one main
-    {
-        grid-row-end: span 2;
-        grid-column-end: span 2;
-        border: 2px solid black;
-    }
-    .one footer{
-        grid-column-end: span 3;
-        border: 2px solid black;
-    }
-    .one aside{
-        border: 2px solid black;
-    }
-    .two
-    {
-        width: 600x;
-        display: inline-flex;
-        flex-direction: column;
-    }
-    .two nav,.two footer{
-        height: 50px;
-        border: 2px solid black;
-    }
-    .two header{
-        height: 175px;
-        border: 2px solid black;
-    }
-    .three section{
-        height: 350px;
-        width: 200px;
-        border: 2px solid black;
-    }
-    .two aside
-    {
-        width: 200px;
-        height: 175px;
-        border: 2px solid black;
-    }
-    .three,.four{
-        display: flex;
-        flex-direction: row;
-        border: 2px solid black;
-    }
-</style>
 <body>
-    <h1>USING GRID</h1>
-    <div class="container one">
-        <nav>NAVBAR</nav>
-        <header>HEADER</header>
-        <section>SIDEBAR</section>
-        <main>MAIN-CONTENT</main>
-        <aside id="asise-1">ASIDE-1</aside>
-        <aside id="asise-2">ASIDE-2</aside>
-        <aside id="asise-3">ASIDE-3</aside>
-        <footer>FOOTER</footer>
-    </div>
-    <h1>USING FLEX-BOX</h1>
-    <div class="container two">
-        <nav>NAVBAR</nav>
-        <header>HEADER</header>
-        <div class="three">
-            <section>SIDEBAR</section>
-            <main>MAIN-CONTENT</main>
+    <nav>
+        <h1>IMAGES</h1>
+        <a href="" class="btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+        <div class="nav-li">
+            <ul>
+                <li><a href="">Menu-1</a></li>
+                <li><a href="">Menu-1</a></li>
+                <li><a href="">Menu-1</a></li>
+                <li><a href="">Menu-1</a></li>
+                <li><a href="">Menu-1</a></li>
+            </ul>
         </div>
-        <div class="four">
-            <aside id="aside-1">ASIDE-1</aside>
-        <aside id="aside-2">ASIDE-2</aside>
-        <aside id="aside-3">ASIDE-3</aside>
-        </div>
-        <footer>FOOTER</footer>
-    </div>
+    </nav>
 </body>
+<script src="./script/app.js"></script>
 </html>
